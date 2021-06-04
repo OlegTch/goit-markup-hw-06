@@ -1036,7 +1036,7 @@ vertical-align: middle;
   /* padding: 12px;  */
   fill: transparent;
 
-  transition-property: background-color, fill, border;
+  transition-property: background-color, fill, border, outline;
  transition-duration: var(--duration);
  transition-timing-function: var(--timing-function);
 }
@@ -1071,7 +1071,6 @@ border: none;
   outline: 1px solid var(--accent-color);
    background-size: contain;
 background-origin: border-box;
-border: none;
   }
 
   .checkbox:checked:focus + .form-icon-policy{
