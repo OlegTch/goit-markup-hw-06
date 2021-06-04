@@ -959,12 +959,7 @@ transition: transform 250ms var(--timing-function);
    display: block;
  }
 
- .form-label-policy {
-  font-size: 14px;
-  line-height: 1.71; 
- }
-
- .form-icon {
+  .form-icon {
    position: absolute;
    top: 50%;
    left: 12px; 
@@ -1019,9 +1014,13 @@ color: rgba(117, 117, 117, 0.5);
 .form-field-policy {
 margin: 0 auto 30px 13px;
 vertical-align: middle;  
-
 /* margin-bottom: 30px; */
 }
+
+.form-label-policy {
+  font-size: 14px;
+  line-height: 1.71; 
+ }
 
 /* .checkbox прячем  */
 .form-icon-policy {
@@ -1058,6 +1057,7 @@ vertical-align: middle;
 
 .checkbox:checked + .form-icon-policy {
 /* border-color: transparent; */
+/* color: var(--primary-white-color); */
 background-color: var(--accent-color);
 background-image: url("../images/icons.svg#icon-check");
 background-size: contain;
