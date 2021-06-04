@@ -1034,15 +1034,18 @@ vertical-align: middle;
   box-sizing: border-box;
   border-radius: 2px;
   /* padding: 12px;  */
+  fill: transparent;
 
-  transition-property: background-color;
+  transition-property: background-color, fill;
  transition-duration: var(--duration);
  transition-timing-function: var(--timing-function);
 }
 
 .policy-icon {
   display: inline-block;
+  
 }
+
 .label-policy {
   cursor: pointer;
   display: flex;
@@ -1057,14 +1060,21 @@ vertical-align: middle;
 
 .checkbox:checked + .form-icon-policy {
 /* border-color: transparent; */
-/* color: var(--primary-white-color); */
+/* var(--primary-white-color); */
+fill: var(--primary-white-color);
 background-color: var(--accent-color);
 background-image: url("../images/icons.svg#icon-check");
 background-size: contain;
 background-origin: border-box;
 border: none;
-
 }
+
+ /* .form-icon-policy:focus .policy-icon{
+  border: 1px solid var(--accent-color);
+  outline: none;
+  background-color: tomato;
+} */
+
 /* .form-field-policy:hover .form-icon-policy 
 {
   background-color: var(--accent-color);
