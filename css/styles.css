@@ -1030,7 +1030,8 @@ vertical-align: middle;
   width: 16px;
   height: 15px;
   /* margin: auto 0; */
-  border: 1px solid rgba(33, 33, 33, 0.2);
+  /* border: 1px solid rgba(33, 33, 33, 0.2); */
+  border: 2px solid var(--title-text-color);
   box-sizing: border-box;
   border-radius: 2px;
   /* padding: 12px;  */
