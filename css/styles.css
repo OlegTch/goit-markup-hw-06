@@ -1041,9 +1041,12 @@ vertical-align: middle;
  transition-timing-function: var(--timing-function);
 }
 
+/* .checkbox {
+    position: relative;  
+} */
+
 .policy-icon {
   display: inline-block;
-  
 }
 
 .label-policy {
@@ -1065,9 +1068,18 @@ border: none;
 }
 
  .checkbox:focus + .form-icon-policy{
-  border: 1px solid var(--accent-color);
-  outline: none;
+  outline: 1px solid var(--accent-color);
+   background-size: contain;
+background-origin: border-box;
+border: none;
   }
+
+  .checkbox:checked:focus + .form-icon-policy{
+    outline: 1px solid var(--title-text-color);
+     background-size: contain;
+  background-origin: border-box;
+  border: none;
+    }
 
 .policy-link {
   color: var(--accent-color);  
