@@ -401,17 +401,96 @@
                         </li>
                     </ul>
                 </div>
+                <form action="#" method="GET" class="form-footer">
+                    <h3 class="title-social"> Подпишитесь на рассылку </h3>
+                    <div class="form-footer-thumb">   
+                        <p class="footer-form-field"> <!-- form-field -->
+                            <label for="mail-footer" class="form-label"></label>
+                            <input type="email" name="mail" id="mail-footer" class="form-footer-input" placeholder="E-mail" required/>
+                        </p>
+                        <button type="submit" class="button form-footer-button primery">Подписаться 
+                            <svg class="form-footer-icon icon" width="24px" height="24px">
+                                <use href="./images/icons.svg#icon-send"></use> 
+                            </svg>
+                        </button> 
+                    </div>      
+                </form>    
             </div>
         </footer>
+             
 
         <!-- Модальное окно -->
         <div class="backdrop is-hidden" data-modal>
             <div class="modal">
-                <button class="modal-button" data-modal-close>
-                    <svg class="modal-icon icon" width="11px" height="11px">
-                        <use href="./images/icons.svg#icon-close"></use> 
-                    </svg>
-                </button>
+                <div class="modal-button-thumb">
+                    <button class="modal-button" data-modal-close>
+                        <svg class="modal-icon icon" width="11px" height="11px">
+                            <use href="./images/icons.svg#icon-close"></use> 
+                        </svg>
+                    </button>
+                </div>
+                <form action="#" method="GET" class="form js-speaker-form"> <!-- autocomplete="off" autocomplete="on" включение подсказки о вводимом ранее в форму -->
+                    <p class="form-title"> Оставьте свои данные, мы вам перезвоним</p>
+                    
+                    <p class="form-field">                        
+                        <label for="name" class="form-label">Имя</label> <!-- form="name" для фоку работает в связке с id="name" -->
+                        <span class="modal-form-input-wrapper">
+                            <input type="text" name="user-name" id="name" class="form-input modal-form-input" required/> <!-- autofocus через JS -->
+                            <svg class="form-icon icon" width="18px" height="18px">
+                                <use href="./images/icons.svg#icon-person-black"></use> 
+                            </svg>
+                        </span>
+                    </p>
+        
+                    <p class="form-field">
+                        <label for="tel" class="form-label">Телефон</label>
+                        <span class="modal-form-input-wrapper">
+                            <input type="tel" name="tel" id="tel" class="form-input modal-form-input" required/>
+                            <svg class="form-icon icon" width="18px" height="18px">
+                                <use href="./images/icons.svg#icon-phone-black"></use> 
+                            </svg>
+                        </span>
+                    </p>
+                    
+                    <p class="form-field">
+                        <label for="mail" class="form-label">Почта</label>
+                        <span class="modal-form-input-wrapper">
+                            <input type="email" name="mail" id="mail" class="form-input modal-form-input" required/>
+                            <svg class="form-icon icon" width="18px" height="18px">
+                                <use href="./images/icons.svg#icon-email-black"></use> 
+                            </svg>
+                        </span>
+                    </p>
+                       
+                    <p class="form-field-comments">
+                        <label for="comments" class="form-label">Комментарий</label>
+                        <textarea name="comments" id="comments" rows="10" placeholder="Введите текст" class="comments"></textarea> 
+                        <!-- css  textarea {resize: none;} -->
+                    </p>
+        
+                    <!-- <p class="form-field-policy">
+                        <input type="checkbox" name="policy" id="policy" class="checkbox" required/>
+                        <svg class="form-icon-policy icon" width="16px" height="15px">
+                            <use href="./images/icons.svg#icon-check"></use> 
+                        </svg>
+                        <label for="policy" class="form-label">Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link">Условия договора</a></label>
+                    </p> -->
+                    <p class="form-field-policy">
+                        <label for="policy" class="label-policy">
+                            <input type="checkbox" name="policy" id="policy" class="checkbox" required/>
+                            <span class="form-icon-policy "> 
+                                <svg class="icon policy-icon" width="16px" height="15px">
+                                    <use href="./images/icons.svg#icon-check"></use> 
+                                </svg>
+                            </span>
+                            <span class="form-label-policy"> Соглашаюсь с рассылкой и принимаю <a href="" class="policy-link">Условия договора</a>
+                            </span>
+                        </label>
+                    </p>
+        
+                    <button type="submit" class="button form-button primery">Отправить</button>             <!-- submit  отправка -->
+                    
+                </form>
             </div>
         </div>
 
